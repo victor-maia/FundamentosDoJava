@@ -2,19 +2,22 @@ package Fundamentos.pessoa;
 
 public class TesteDePessoa {
     public static void main(String[] args) {
-        Pessoa pessoa1 = new Pessoa();
-        pessoa1.cpf = "333.222.111-00";
-        pessoa1.nome = "Victor";
-        pessoa1.idade = 19;
+        Professor professor = new Professor();
+        professor.setCpf("333.222.111-00");
+        professor.setNome("Victor");
+        professor.setIdade(19);
+        professor.setSalario(15000);
+   
+        System.out.println(professor.imprimirDadosDaPessoa());
 
-        System.out.println(pessoa1.imprimirDadosDaPessoa(1));
 
-        Pessoa pessoa2 = new Pessoa();
-        pessoa2.cpf = "444.555.777-00";
-        pessoa2.nome = "Maria";
-        pessoa2.idade = 58;
+        Aluno aluno = new Aluno();
 
-        System.out.println(pessoa2.imprimirDadosDaPessoa(2));
-       
+        aluno.setCpf("333.222.111-00");
+        aluno.setNome("Victor");
+        aluno.setIdade(19);
+        aluno.setMatricula("SP1232");
+
+        System.out.println(aluno.imprimirDadosDaPessoa());
     }
 }
