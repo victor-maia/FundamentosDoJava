@@ -10,4 +10,9 @@ public class Professor extends Pessoa {
     public double getSalario() {
         return salario;
     }
+
+    String imprimirDadosDaPessoa(){
+        System.out.println(super.imprimirDadosDaPessoa());
+        return "Você é professor";
+    }
 }
